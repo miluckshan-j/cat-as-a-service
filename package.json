@@ -7,7 +7,8 @@
     "caas": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "test": "tsc -p . && node ./dist/index.js --greeting Hey --who Gapstars"
   },
   "repository": {
     "type": "git",
