@@ -15,9 +15,15 @@ export const compositeImage = async (
         {
           input: image2.data,
           top: 0,
-          left: 0,
+          left: imageParameters.width,
         },
       ])
+      .resize({
+        height: imageParameters.height,
+        width: imageParameters.width * 2,
+        fit: sharp.fit.contain,
+        position: "left",
+      })
       .toFile("cat.png");
     console.info("Image saved");
   } catch (error) {
