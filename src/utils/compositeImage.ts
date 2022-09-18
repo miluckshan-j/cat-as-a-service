@@ -7,9 +7,12 @@ export const compositeImage = async (
   who: string,
   imageParameters: FetchCatImagesQueries
 ) => {
-  const image1 = await fetchCatImages(greeting, imageParameters);
-  const image2 = await fetchCatImages(who, imageParameters);
   try {
+    const imagesPromise = Promise.all([
+      await fetchCatImages(greeting, imageParameters),
+      await fetchCatImages(who, imageParameters),
+    ]);
+    const [image1, image2] = await imagesPromise;
     await sharp(image1.data)
       .composite([
         {
