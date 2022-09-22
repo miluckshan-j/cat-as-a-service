@@ -5,6 +5,7 @@ import { compositeImage } from "./utils/compositeImage";
 
 const argv = minimist(process.argv.slice(1));
 
+// Parse arguments with default values
 const {
   greeting = "Hello",
   who = "You",
@@ -14,6 +15,7 @@ const {
   size = 100,
 } = argv;
 
+// Get required parameters
 const imageParameters: FetchCatImagesQueries = {
   height,
   width,
@@ -21,4 +23,5 @@ const imageParameters: FetchCatImagesQueries = {
   size,
 };
 
+// Call composite image function
 compositeImage(greeting, who, imageParameters);
