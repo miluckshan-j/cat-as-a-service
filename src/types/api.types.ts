@@ -4,3 +4,8 @@ export interface FetchCatImagesQueries {
   color: string;
   size: number;
 }
+
+export interface APIResponse {
+  data: Buffer | string;
+  status: number;
+}
