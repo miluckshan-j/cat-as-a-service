@@ -1,5 +1,5 @@
 {
-  "name": "gapstars-assesment",
+  "name": "cat-as-a-service",
   "version": "1.0.0",
   "description": "An application to blend and output cat images",
   "main": "./dist/index.js",
@@ -8,19 +8,19 @@
   },
   "scripts": {
     "build": "tsc -p .",
-    "test": "tsc -p . && node ./dist/index.js --greeting Hey --who Gapstars"
+    "test": "tsc -p . && node ./dist/index.js --who GitHub"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miluckshan-j/gapstars-assessment.git"
+    "url": "git+https://github.com/miluckshan-j/cat-as-a-service.git"
   },
   "keywords": [],
   "author": "Miluckshan Jalangan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/miluckshan-j/gapstars-assessment/issues"
+    "url": "https://github.com/miluckshan-j/cat-as-a-service/issues"
   },
-  "homepage": "https://github.com/miluckshan-j/gapstars-assessment#readme",
+  "homepage": "https://github.com/miluckshan-j/cat-as-a-service#readme",
   "devDependencies": {
     "@types/minimist": "^1.2.2",
     "@types/node": "^18.7.18",
