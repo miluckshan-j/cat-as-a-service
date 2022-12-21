@@ -24,10 +24,10 @@ Use the following parameters to generate your cute cat greeting
 ### Example
 
 ```bash
-  node ./dist/index.js --greeting Hey --who Gapstars 
+  node ./dist/index.js --who GitHub 
 ```
 
-![Sample Output](https://res.cloudinary.com/dufl0llvg/image/upload/v1663483445/cat.png)
+![Sample Output](https://res.cloudinary.com/dufl0llvg/image/upload/v1671626188/cat.png)
 
 
 ## Tech Stack
