@@ -42,33 +42,6 @@ minimist - Parse argument options
 
 sharp - High performance Node.js image processing
 
-
-### Selection of Packages
-
-* axios was selected instead of request as the package is no longer maintained by the Author. Last release was in 2019. [Message by Author](https://github.com/request/request/issues/3142)
-* sharp was used instead of @mapbox/blend since the author have dropped support for Windows binaries. [Message by Author](https://github.com/mapnik/node-mapnik/issues/848)
-
-
-## Improvements
-
-* Using TypeScript for type safety while development
-* Cleaner code
-* Remove unncessary packages
-* Usage of better package alternatives
-* Secure
-
-
-### Secure
-
-There are no known vulnerabilities found in the packages used
-
-![NPM Audit](https://res.cloudinary.com/dufl0llvg/image/upload/v1663485887/vulnerabilities.png)
-
-Minimist version used is >1.2.6 to mitigate known vulnerabilty 
-
-[![Minimist Vulnerabilty](https://security.snyk.io/_nuxt/img/header-logo.aded646.svg)](https://security.snyk.io/vuln/SNYK-JS-MINIMIST-2429795)
-
-
 ## Run Locally
 
 Clone the project
